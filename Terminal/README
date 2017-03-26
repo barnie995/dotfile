@@ -1,0 +1,8 @@
+
+
+TMuX, ZSH, oh my ZSH and VIM files
+
+
+To get my exact colouring scheme, use Chris Kempson's Base 16 shell found here:  [Base16 Shell](https://github.com/chriskempson/base16-shell) .
+
+It also requires his Vim version which has all the colors and such. In my .vimrc theres little changes that need to be made.  Make them.  [Base 16 for VIM](https://github.com/chriskempson/base16-vim)
