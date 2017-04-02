@@ -1,5 +1,5 @@
 colorscheme base16-default-dark		" Coloring VIM
-                                " Comment out 116 in the .vim file to fix the numbers going fucky
+                                " Comment out 144 in the .vim file to fix the numbers going fucky
 syntax enable  				" Does what it says on the tin
 
 set tabstop=4				" Reading a file in, changes a <TAB> to 4 Spaces
