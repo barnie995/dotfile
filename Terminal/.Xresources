@@ -1,0 +1,3 @@
+URxvt.font:     xft:Tamasyn10x20r:style=Regular:size=10
+URxvt.letterSpace: -1
+URxvt.scrollBar: false
