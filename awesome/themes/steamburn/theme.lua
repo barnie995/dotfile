@@ -139,10 +139,17 @@ local cpu = lain.widget.sysload({
     end
 })
 
+-- Coretemp
+local temp = lain.widget.temp({
+    settings = function()
+        widget:set_markup(markup.font(theme.font, markup(gray, " Temp ") .. coretemp_now .. " "))
+     end
+})
+
 -- MEM
 local mem = lain.widget.mem({
     settings = function()
-        widget:set_markup(markup.font(theme.font, markup(gray, " Mem ") .. mem_now.used .. " "))
+        widget:set_markup(markup.font(theme.font, markup(gray, " Mem  ") .. mem_now.used .. " "))
     end
 })
 
@@ -258,6 +265,7 @@ function theme.at_screen_connect(s)
             spr,
             --theme.mpd.widget,
             --mail.widget,
+            temp.widget,
             cpu.widget,
             mem.widget,
             bat.widget,
