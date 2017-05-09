@@ -239,7 +239,7 @@ globalkeys = awful.util.table.join(
     awful.key({ altkey,           }, "k",
         function ()
             awful.client.focus.byidx(-1)
-        end,
+       end,
         {description = "focus previous by index", group = "client"}
     ),
 
@@ -421,7 +421,11 @@ globalkeys = awful.util.table.join(
     -- User programs
     awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end),
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
-
+    awful.key({ modkey }, "l", 
+        function()
+        local command = string.format("i3lock -t -i %s/dotfiles/backgrounds/boop.png", os.getenv("HOME"))
+            awful.spawn.with_shell(command)
+        end),
     -- Default
     --[[ Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
