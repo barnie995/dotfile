@@ -89,4 +89,4 @@ BASE16_SHELL=$HOME/.config/base16-shell/
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="$HOME/android/platform-tools:$PATH:$HOME/.rvm/bin"
